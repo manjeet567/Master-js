@@ -81,3 +81,24 @@ console.log(filledArray)
 // { hello: 'godbye' },
 // { hello: 'godbye' },
 // { hello: 'godbye' }
+
+
+let numbersss=[1,2,3,4]
+let target=7
+let ssss=(num,target)=>{
+for(let i=0;i<num.length;i++){
+    for(let j=i+1;j<num.length;j++){
+        if(num[i]+num[j]==7){
+          console.log([i,j])
+        }
+    }
+}
+}
+ssss(numbersss,target)
+
+
+let arr77=[1,2,1,2,4,5,7,8,1,2,7,2]
+function asas(arr) {
+    return [...new Set(arr)]
+}
+console.log(asas(arr77))
