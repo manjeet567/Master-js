@@ -40,7 +40,7 @@ var mergeTwoLists = function (list1, list2) {
 console.log(mergeTwoLists(l1,l2))
 
 
-//remove duplicaate from an array///
+//remove duplicate from an array///
 
 let arrrr=[0,5,8,6,4,9,5,2,4,1,6,4,2,5,7,8,1]
 function removeDuplicate(arr){
