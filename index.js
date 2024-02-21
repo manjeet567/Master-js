@@ -102,3 +102,10 @@ function asas(arr) {
     return [...new Set(arr)]
 }
 console.log(asas(arr77))
+
+
+let prop ="age"
+let person={[prop]:30}
+console.log(person.age)
+
+console.log("b"+"a"+ +"a"+"a")
