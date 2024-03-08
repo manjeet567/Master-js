@@ -109,3 +109,4 @@ let person={[prop]:30}
 console.log(person.age)
 
 console.log("b"+"a"+ +"a"+"a")
+
