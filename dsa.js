@@ -41,7 +41,7 @@ if(diff<=0){
     return `buy on the ${x+1} day and sell on the ${y+1} day`
 }
 }
-//console.log(buySellStock([7,6,5,4,3,2,1]))
+console.log(buySellStock([7,6,5,4,3,2,1]))
 
 function maxProfit(prices) {
     let minprice=Infinity; //7
@@ -56,7 +56,7 @@ function maxProfit(prices) {
     return maxprofit
 }
   const prices = [7, 1, 5, 3, 6, 4];
-  //console.log(maxProfit(prices));
+  console.log('dgfdsf====',maxProfit(prices));
 
 
   //  find duplicates
