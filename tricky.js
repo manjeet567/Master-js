@@ -59,3 +59,33 @@ console.log(array.toSpliced(2, 4)); // Output: [3, 1, 5, 9, 2, 6, 5]
 
 
 console.log(0==='0')
+
+console.log(+'infinity'-'5') //output  ----  NaN
+
+console.log(3*'foo')  //output  ----  NaN
+
+console.log(3*'6') // output ----  18
+
+console.log(typeof typeof 1)  //  output----  string
+
+console.log([]+{}) //output---  [object Object]
+
+console.log('foo'instanceof String)  //  false
+
+console.log(Math.min())  //output  Infinity
+
+console.log(Math.max())  //output  -Infinity
+
+console.log(NaN===NaN)  //output  false
+
+console.log(typeof NaN) // OUTPUT  number
+
+console.log([]+[])
+
+console.log(0.1+0.2===0.3)  // output   false
+
+console.log('10'- -'5')  //output  15
+
+console.log(null+null)  // output   0
+
+console.log([]=='')  // output false
