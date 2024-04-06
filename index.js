@@ -110,3 +110,12 @@ console.log(person.age)
 
 console.log("b"+"a"+ +"a"+"a")
 
+let a2=[1,2,3]
+let b2=a2
+a2.push(4)
+console.log(a2,b2)  //output  [ 1, 2, 3, 4 ] [ 1, 2, 3, 4 ]
+
+let a3=[1,2,3]
+let b3=[...a3]  //  its create a shollow copy
+a3.push(4)
+console.log(a3,b3)  //output  [ 1, 2, 3, 4 ] [ 1, 2, 3 ]  
