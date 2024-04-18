@@ -109,3 +109,80 @@ for(let i=0;i<arr.length-1;i++){
 }
 }
 console.log(product([4,3,9,5,1,2]))
+
+
+// most consecutive frequent number in an array in JavaScript ==========
+
+function findMostConsecutiveFrequentNumber(arr) {
+    let maxCount = 0;
+    let currentCount = 1;
+    let frequentNumber = arr[0]; // Initialize with the first number in the array
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] === arr[i - 1]) {
+            currentCount++;
+        } else {
+            if (currentCount > maxCount) {
+                maxCount = currentCount;
+                frequentNumber = arr[i - 1];
+            }
+            currentCount = 1; // Reset the count for the new number
+        }
+    }
+
+    // Check for the last sequence
+    if (currentCount > maxCount) {
+        maxCount = currentCount;
+        frequentNumber = arr[arr.length - 1];
+    }
+
+    return { number: frequentNumber, consecutiveCount: maxCount };
+}
+const array = [1, 1, 1, 2, 2, 3, 4,4,4,4, 4, 4, 4, 5, 5, 5, 5, 5];
+const result = findMostConsecutiveFrequentNumber(array);
+console.log(`The most consecutive frequent number is ${result.number} with ${result.consecutiveCount} occurrences.`);
+
+function findMostConsecutiveFrequentNumberr(arr) {
+    let maxCount = 0;
+    let frequentNumber;
+
+   for(let i=0;i<arr.length;i++){
+    let currentCount=0;
+    for(let j=i;j<arr.length;j++){
+        if(arr[j]===arr[i]){
+            currentCount++
+        }else{
+            break
+        }
+    }
+    if(currentCount>maxCount){
+        maxCount=currentCount;
+        frequentNumber=arr[i]
+    }
+   }
+
+    return { number: frequentNumber, consecutiveCount: maxCount };
+}
+const arrayy = [1,  1, 2, 2, 3, 4, 4,4,4,4,4, 4, 4, 5, 5, 5, 5, 5];
+const resultt = findMostConsecutiveFrequentNumberr(arrayy);
+console.log(`The most consecutive frequent number is ${resultt.number} with ${resultt.consecutiveCount} occurrences.`);
+
+
+// Given an array of integers, write a function in Node.js to find the maximum sum of a contiguous subarray within the array.
+//=====================================
+
+const arrayt = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+
+function as(arr){
+    let maxsum=arr[0]
+for(let i=0;i<arr.length;i++){
+for(let j=0;j<arr.length;j++){
+    if(arr[i]+arr[j]>maxsum){
+        maxsum=arr[i]+arr[j]
+    }
+}
+}
+return maxsum
+}
+
+console.log(as(arrayt))
